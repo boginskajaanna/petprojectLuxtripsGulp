@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>LUXTRIPS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&family=Manrope:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container-fluid">
+          <nav class="header__menu">
+            <a class="logo" href="index.html">
+              <picture>
+                <!-- Если поддерживается AVIF -->
+                <source srcset="./images/dist/logo.avif" type="image/avif" />
+                <!-- Если поддерживается WEBP -->
+                <source srcset="./images/dist/logo.webp" type="image/webp" />
+                <!-- Если не поддерживается ни AVIF, ни WEBP -->
+                <img class="logo__img" src="./images/dist/logo.png" alt="luxtrips logo" />
+              </picture>
+            </a>
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a class="header__menu-item-link" href="index.html">Home</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-item-link" href="#luxury">Luxury packages</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-item-link" href="#book">Book with us</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-item-link" href="#why">Why Lux Trips</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-item-link" href="#contact">Contact</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-item-link" href="#review">Reviews</a>
+              </li>
+            </ul>
+            <div class="header__menu-button-div">
+              <button class="header__menu-btn" type="button">Call Me Back</button>
+            </div>
+            <button class="header__burger-btn" type="button">
+              <img src="./images/dist/sprite.svg#burger-menu" class="svg-burger-menu-dims"  alt="burger menu" />
+            </button>
+          </nav>
+
+          <div class="rightside-menu rightside-menu--close">
+            <!-- <a class="rightside-menu__logo" href="index.html">
+              <picture>
+                <source srcset="./images/dist/logo-rightside-menu.avif" type="image/avif" />
+                <source srcset="./images/dist/logo-rightside-menu.webp" type="image/webp" />
+                <img
+                  class="rightside-menu__logo-img"
+                  src="./images/dist/logo-rightside-menu.png"
+                  alt="logo luxtrips"
+                />
+              </picture>
+            </a> -->
+
+            <nav class="rightside-menu__menu">
+              <ul class="rightside-menu__list">
+                <li class="rightside-menu__item"><a class="rightside-menu__item-link" href="#">HOME</a></li>
+                <li class="rightside-menu__item">
+                  <a class="rightside-menu__item-link" href="#luxury">LUXURY PACKAGES</a>
+                </li>
+                <li class="rightside-menu__item">
+                  <a class="rightside-menu__item-link" href="#book">BOOK WITH US</a>
+                </li>
+                <li class="rightside-menu__item">
+                  <a class="rightside-menu__item-link" href="#why">WHY LUX TRIPS</a>
+                </li>
+                <li class="rightside-menu__item">
+                  <a class="rightside-menu__item-link" href="#contact">CONTACT</a>
+                </li>
+                <li class="rightside-menu__item">
+                  <a class="rightside-menu__item-link" href="#review">REVIEWS</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="top-section">
+          <div class="container-fluid">
+            <div class="top-section__inner">
+              <p class="top-section__text">
+                the <br />
+                world’s <br />
+                most
+              </p>
+              <h1 class="top-section__title">
+                <span class="top-section__title--first"
+                  >EXTRA <br />
+                  ORDINARY</span
+                >
+                <span class="top-section__title--second">PLACES</span>
+              </h1>
+
+              <form class="top-section__form">
+                <h4 class="top-section__form-title">Find your journey</h4>
+                <div class="top-section__form-item">
+                  <label
+                    class="top-section__form-label top-section__form-label--destination"
+                    for="destination"
+                    >Destination</label
+                  >
+                  <select
+                    class="top-section__form-input"
+                    name="destination"
+                    id="destination"
+                    placeholder="Where are you going?"
+                  >
+                    <option class="top-section__form-option" value="" disabled selected hidden>
+                      "Where are you going?"
+                    </option>
+                    <option class="top-section__form-option" value="Argentina">Argentina</option>
+                    <option class="top-section__form-option" value="Australia">Australia</option>
+                    <option class="top-section__form-option" value="Austria">Austria</option>
+                    <option class="top-section__form-option" value="Brazil">Brazil</option>
+                    <option class="top-section__form-option" value="Canada">Canada</option>
+                    <option class="top-section__form-option" value="France">France</option>
+                    <option class="top-section__form-option" value="Greece">Greece</option>
+                    <option class="top-section__form-option" value="Indonesia">Indonesia</option>
+                    <option class="top-section__form-option" value="Italy">Italy</option>
+                    <option class="top-section__form-option" value="Jamaica">Jamaica</option>
+                    <option class="top-section__form-option" value="Australia">Maldives</option>
+                    <option class="top-section__form-option" value="Mexico">Mexico</option>
+                    <option class="top-section__form-option" value="Netherlands">Netherlands</option>
+                    <option class="top-section__form-option" value="New Zealand">New Zealand</option>
+                    <option class="top-section__form-option" value="Philippines">Philippines</option>
+                    <option class="top-section__form-option" value="Spain">Spain</option>
+                    <option class="top-section__form-option" value="United Kingdom">United Kingdom</option>
+                  </select>
+                </div>
+                <div class="top-section__form-item">
+                  <label class="top-section__form-label top-section__form-label--traveltype" for="type"
+                    >Travel type</label
+                  >
+                  <select class="top-section__form-input" name="type" id="type">
+                    <option class="top-section__form-option" value="Adventure Travel" selected>
+                      Adventure Travel
+                    </option>
+                    <option class="top-section__form-option" value="Beach Vacation">Beach Vacation</option>
+                    <option class="top-section__form-option" value="Cultural Trip">Cultural Trip</option>
+                    <option class="top-section__form-option" value="Sightseeng Tour">Sightseeng Tour</option>
+                  </select>
+                </div>
+                <div class="top-section__form-item">
+                  <label class="top-section__form-label top-section__form-label--when" for="when">When</label>
+                  <input class="top-section__form-input" type="date" name="when" id="when" min="YYYY-MM-DD" />
+                </div>
+                <div class="top-section__form-item">
+                  <label class="top-section__form-label top-section__form-label--travellers" for="travellers"
+                    >Travellers</label
+                  >
+                  <select class="top-section__form-input" name="travellers" id="travellers">
+                    <option class="top-section__form-option" value="2 Persons">1 Person</option>
+                    <option class="top-section__form-option" value="2 Persons" selected>2 Persons</option>
+                    <option class="top-section__form-option" value="2 Persons">3 Persons</option>
+                    <option class="top-section__form-option" value="2 Persons">4 Persons</option>
+                  </select>
+                </div>
+                <button class="top-section__form-find-btn" type="button">Find</button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section class="tours animated">
+          <div class="container">
+            <div class="tours__inner">
+              <h2 class="tours__title title">Top Rated Experiences</h2>
+              <div class="tours__destinations">
+                <button class="tours__destination-btn" type="button" data-filter=".category-europe">
+                  Europe
+                </button>
+                <button class="tours__destination-btn" type="button" data-filter=".category-africa">
+                  Africa
+                </button>
+                <button class="tours__destination-btn" type="button" data-filter=".category-asia">
+                  Asia
+                </button>
+                <button class="tours__destination-btn" type="button" data-filter=".category-northamerica">
+                  North America
+                </button>
+                <button class="tours__destination-btn" type="button" data-filter=".category-southamerica">
+                  South America
+                </button>
+                <button class="tours__destination-btn" type="button" data-filter=".category-arctica">
+                  Arctica
+                </button>
+                <button class="tours__destination-btn" type="button" data-filter=".category-australia">
+                  Australia
+                </button>
+              </div>
+
+              <div class="tours__list">
+                <div class="tours__cards mix category-europe">
+                  <a class="tours__card" href="#">
+                    <article class="tours__card-item tours__card-item--paris">
+                      <div class="tours__card-info">
+                        <p class="tours__card-country">France</p>
+                        <h3 class="tours__card-showplace">Paris Top 5 Places</h3>
+                        <span class="tours__card-tag">FROM</span>
+                        <span class="tours__card-price">€ 1900</span>
+                      </div>
+                      <div class="tours__card-rating">
+                        <p class="tours__card-rating-number">5.0</p>
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                      </div>
+                    </article>
+                  </a>
+                  <a class="tours__card" href="#">
+                    <article class="tours__card-item tours__card-item--winter-park">
+                      <div class="tours__card-info">
+                        <p class="tours__card-country">Austria</p>
+                        <h3 class="tours__card-showplace">Winter Park Ski Holiday</h3>
+                        <span class="tours__card-tag">FROM</span>
+                        <span class="tours__card-price">€ 2100</span>
+                      </div>
+                      <div class="tours__card-rating">
+                        <p class="tours__card-rating-number">4.0</p>
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-blank.png"
+                          alt="rating blank icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                      </div>
+                    </article>
+                  </a>
+                  <a class="tours__card" href="#">
+                    <article class="tours__card-item tours__card-item--hvar">
+                      <div class="tours__card-info">
+                        <p class="tours__card-country">Croatia</p>
+                        <h3 class="tours__card-showplace">Hvar</h3>
+                        <span class="tours__card-tag">FROM</span>
+                        <span class="tours__card-price">€ 4500</span>
+                      </div>
+                      <div class="tours__card-rating">
+                        <p class="tours__card-rating-number">4.0</p>
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-blank.png"
+                          alt="rating blank icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                      </div>
+                    </article>
+                  </a>
+                </div>
+
+                <div class="tours__cards mix category-africa">
+                  <a class="tours__card" href="#">
+                    <article class="tours__card-item tours__card-item--zanzibar">
+                      <div class="tours__card-info">
+                        <p class="tours__card-country">Zanzibar</p>
+                        <h3 class="tours__card-showplace">Changu Island</h3>
+                        <span class="tours__card-tag">FROM</span>
+                        <span class="tours__card-price">€ 2400</span>
+                      </div>
+                      <div class="tours__card-rating">
+                        <p class="tours__card-rating-number">4.0</p>
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-blank.png"
+                          alt="rating blank icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                      </div>
+                    </article>
+                  </a>
+                  <a class="tours__card" href="#">
+                    <article class="tours__card-item tours__card-item--marocco">
+                      <div class="tours__card-info">
+                        <p class="tours__card-country">Marocco</p>
+                        <h3 class="tours__card-showplace">Safari</h3>
+                        <span class="tours__card-tag">FROM</span>
+                        <span class="tours__card-price">€ 3100</span>
+                      </div>
+                      <div class="tours__card-rating">
+                        <p class="tours__card-rating-number">5.0</p>
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                      </div>
+                    </article>
+                  </a>
+                  <a class="tours__card" href="#">
+                    <article class="tours__card-item tours__card-item--south-africa">
+                      <div class="tours__card-info">
+                        <p class="tours__card-country">South Africa</p>
+                        <h3 class="tours__card-showplace">Cape of Good Hope</h3>
+                        <span class="tours__card-tag">FROM</span>
+                        <span class="tours__card-price">€ 2300</span>
+                      </div>
+                      <div class="tours__card-rating">
+                        <p class="tours__card-rating-number">4.0</p>
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-blank.png"
+                          alt="rating blank icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                      </div>
+                    </article>
+                  </a>
+                </div>
+
+                <div class="tours__cards mix category-asia">
+                  <a class="tours__card" href="#">
+                    <article class="tours__card-item tours__card-item--wladi-musa">
+                      <div class="tours__card-info">
+                        <p class="tours__card-country">Jordan</p>
+                        <h3 class="tours__card-showplace">Wadi Musa</h3>
+                        <span class="tours__card-tag">FROM</span>
+                        <span class="tours__card-price">€ 2500</span>
+                      </div>
+                      <div class="tours__card-rating">
+                        <p class="tours__card-rating-number">4.0</p>
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-blank.png"
+                          alt="rating blank icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                      </div>
+                    </article>
+                  </a>
+                  <a class="tours__card" href="#">
+                    <article class="tours__card-item tours__card-item--bali">
+                      <div class="tours__card-info">
+                        <p class="tours__card-country">Indonesia</p>
+                        <h3 class="tours__card-showplace">Bali</h3>
+                        <span class="tours__card-tag">FROM</span>
+                        <span class="tours__card-price">€ 2200</span>
+                      </div>
+                      <div class="tours__card-rating">
+                        <p class="tours__card-rating-number">5.0</p>
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                      </div>
+                    </article>
+                  </a>
+                  <a class="tours__card" href="#">
+                    <article class="tours__card-item tours__card-item--india">
+                      <div class="tours__card-info">
+                        <p class="tours__card-country">India</p>
+                        <h3 class="tours__card-showplace">Taj Mahal</h3>
+                        <span class="tours__card-tag">FROM</span>
+                        <span class="tours__card-price">€ 2800</span>
+                      </div>
+                      <div class="tours__card-rating">
+                        <p class="tours__card-rating-number">5.0</p>
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                      </div>
+                    </article>
+                  </a>
+                </div>
+
+                <div class="tours__cards mix category-northamerica">
+                  <a class="tours__card" href="#">
+                    <article class="tours__card-item tours__card-item--grand-canyon">
+                      <div class="tours__card-info">
+                        <p class="tours__card-country">USA</p>
+                        <h3 class="tours__card-showplace">Grand Canyon</h3>
+                        <span class="tours__card-tag">FROM</span>
+                        <span class="tours__card-price">€ 4100</span>
+                      </div>
+                      <div class="tours__card-rating">
+                        <p class="tours__card-rating-number">5.0</p>
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                      </div>
+                    </article>
+                  </a>
+                  <a class="tours__card" href="#">
+                    <article class="tours__card-item tours__card-item--canada">
+                      <div class="tours__card-info">
+                        <p class="tours__card-country">Canada</p>
+                        <h3 class="tours__card-showplace">Niagara Falls</h3>
+                        <span class="tours__card-tag">FROM</span>
+                        <span class="tours__card-price">€ 2900</span>
+                      </div>
+                      <div class="tours__card-rating">
+                        <p class="tours__card-rating-number">5.0</p>
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                      </div>
+                    </article>
+                  </a>
+                  <a class="tours__card" href="#">
+                    <article class="tours__card-item tours__card-item--new-york">
+                      <div class="tours__card-info">
+                        <p class="tours__card-country">USA</p>
+                        <h3 class="tours__card-showplace">New York Top 10 Places</h3>
+                        <span class="tours__card-tag">FROM</span>
+                        <span class="tours__card-price">€ 4500</span>
+                      </div>
+                      <div class="tours__card-rating">
+                        <p class="tours__card-rating-number">5.0</p>
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                      </div>
+                    </article>
+                  </a>
+                </div>
+
+                <div class="tours__cards mix category-southamerica">
+                  <a class="tours__card" href="#">
+                    <article class="tours__card-item tours__card-item--machu-picchu">
+                      <div class="tours__card-info">
+                        <p class="tours__card-country">Peru</p>
+                        <h3 class="tours__card-showplace">Machu Picchu</h3>
+                        <span class="tours__card-tag">FROM</span>
+                        <span class="tours__card-price">€ 4300</span>
+                      </div>
+                      <div class="tours__card-rating">
+                        <p class="tours__card-rating-number">5.0</p>
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                      </div>
+                    </article>
+                  </a>
+                  <a class="tours__card" href="#">
+                    <article class="tours__card-item tours__card-item--mexico">
+                      <div class="tours__card-info">
+                        <p class="tours__card-country">Mexico</p>
+                        <h3 class="tours__card-showplace">El Castillo</h3>
+                        <span class="tours__card-tag">FROM</span>
+                        <span class="tours__card-price">€ 4400</span>
+                      </div>
+                      <div class="tours__card-rating">
+                        <p class="tours__card-rating-number">5.0</p>
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                      </div>
+                    </article>
+                  </a>
+                  <a class="tours__card" href="#">
+                    <article class="tours__card-item tours__card-item--rio">
+                      <div class="tours__card-info">
+                        <p class="tours__card-country">Brazil</p>
+                        <h3 class="tours__card-showplace">Cristo Redentor</h3>
+                        <span class="tours__card-tag">FROM</span>
+                        <span class="tours__card-price">€ 3900</span>
+                      </div>
+                      <div class="tours__card-rating">
+                        <p class="tours__card-rating-number">5.0</p>
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                      </div>
+                    </article>
+                  </a>
+                </div>
+
+                <div class="tours__cards mix category-arctica">
+                  <a class="tours__card" href="#">
+                    <article class="tours__card-item tours__card-item--northern-lights">
+                      <div class="tours__card-info">
+                        <p class="tours__card-country">Iceland</p>
+                        <h3 class="tours__card-showplace">Northern Lights Circle Tour</h3>
+                        <span class="tours__card-tag">FROM</span>
+                        <span class="tours__card-price">€ 3100</span>
+                      </div>
+                      <div class="tours__card-rating">
+                        <p class="tours__card-rating-number">5.0</p>
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                      </div>
+                    </article>
+                  </a>
+                  <a class="tours__card" href="#">
+                    <article class="tours__card-item tours__card-item--arctica">
+                      <div class="tours__card-info">
+                        <p class="tours__card-country">Greenland</p>
+                        <h3 class="tours__card-showplace">Greenland National Park</h3>
+                        <span class="tours__card-tag">FROM</span>
+                        <span class="tours__card-price">€ 3990</span>
+                      </div>
+                      <div class="tours__card-rating">
+                        <p class="tours__card-rating-number">5.0</p>
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                      </div>
+                    </article>
+                  </a>
+                  <a class="tours__card" href="#">
+                    <article class="tours__card-item tours__card-item--north-pole">
+                      <div class="tours__card-info">
+                        <p class="tours__card-country">Arctic Ocean</p>
+                        <h3 class="tours__card-showplace">North Pole</h3>
+                        <span class="tours__card-tag">FROM</span>
+                        <span class="tours__card-price">€ 5100</span>
+                      </div>
+                      <div class="tours__card-rating">
+                        <p class="tours__card-rating-number">5.0</p>
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                      </div>
+                    </article>
+                  </a>
+                </div>
+
+                <div class="tours__cards mix category-australia">
+                  <a class="tours__card" href="#">
+                    <article class="tours__card-item tours__card-item--australia">
+                      <div class="tours__card-info">
+                        <p class="tours__card-country">Australia</p>
+                        <h3 class="tours__card-showplace">Barossa Valley</h3>
+                        <span class="tours__card-tag">FROM</span>
+                        <span class="tours__card-price">€ 3100</span>
+                      </div>
+                      <div class="tours__card-rating">
+                        <p class="tours__card-rating-number">4.0</p>
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-blank.png"
+                          alt="rating blank icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                      </div>
+                    </article>
+                  </a>
+                  <a class="tours__card" href="#">
+                    <article class="tours__card-item tours__card-item--sydney">
+                      <div class="tours__card-info">
+                        <p class="tours__card-country">Australia</p>
+                        <h3 class="tours__card-showplace">Sydney</h3>
+                        <span class="tours__card-tag">FROM</span>
+                        <span class="tours__card-price">€ 4200</span>
+                      </div>
+                      <div class="tours__card-rating">
+                        <p class="tours__card-rating-number">5.0</p>
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                      </div>
+                    </article>
+                  </a>
+                  <a class="tours__card" href="#">
+                    <article class="tours__card-item tours__card-item--hobbiton">
+                      <div class="tours__card-info">
+                        <p class="tours__card-country">New Zealand</p>
+                        <h3 class="tours__card-showplace">Hobbiton</h3>
+                        <span class="tours__card-tag">FROM</span>
+                        <span class="tours__card-price">€ 3900</span>
+                      </div>
+                      <div class="tours__card-rating">
+                        <p class="tours__card-rating-number">5.0</p>
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                        <img
+                          class="tours__card-rating-icon"
+                          src="./images/dist/rating-fill.png"
+                          alt="rating fill icon"
+                        />
+                      </div>
+                    </article>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="luxury animated" id="luxury">
+          <div class="container-luxury">
+            <div class="luxury__inner">
+              <div class="luxury__item">
+                <h2 class="luxury__title title">Luxury Packages</h2>
+                <a class="luxury__button" href="#">view all</a>
+              </div>
+
+              <div class="luxury__item luxury__item--best">
+                <a class="luxury__card" href="#">
+                  <article class="luxury__article">
+                    <h3 class="luxury__article-title">Best Winter Destinations</h3>
+                    <div class="luxury__article-info">
+                      <span class="luxury__article-number">34</span>
+                      <span class="luxury__article-text">places</span>
+                      <div class="luxury__article-rhombus"></div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+
+              <div class="luxury__item luxury__item--extraordinary">
+                <a class="luxury__card" href="#">
+                  <article class="luxury__article">
+                    <h3 class="luxury__article-title">The world's most extraordinary places</h3>
+                    <div class="luxury__article-info">
+                      <span class="luxury__article-number">29</span>
+                      <span class="luxury__article-text">places</span>
+                      <div class="luxury__article-rhombus"></div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+
+              <div class="luxury__item luxury__item--new">
+                <a class="luxury__card" href="#">
+                  <article class="luxury__article">
+                    <h3 class="luxury__article-title">New destinations for 2022</h3>
+                    <div class="luxury__article-info">
+                      <span class="luxury__article-number">47</span>
+                      <span class="luxury__article-text">places</span>
+                      <div class="luxury__article-rhombus"></div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+
+              <div class="luxury__item luxury__item--health">
+                <a class="luxury__card" href="#">
+                  <article class="luxury__article">
+                    <h3 class="luxury__article-title">Your health is matter</h3>
+                    <div class="luxury__article-info">
+                      <span class="luxury__article-number">29</span>
+                      <span class="luxury__article-text">places</span>
+                      <div class="luxury__article-rhombus"></div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+
+              <div class="luxury__item luxury__item--away">
+                <a class="luxury__card" href="#">
+                  <article class="luxury__article">
+                    <h3 class="luxury__article-title">Experiences Away From Crowd</h3>
+                    <div class="luxury__article-info">
+                      <span class="luxury__article-number">168</span>
+                      <span class="luxury__article-text">places</span>
+                      <div class="luxury__article-rhombus"></div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+            </div>
+
+            <div class="luxury__inner--mobile">
+              <div class="luxury__top--mobile">
+                <h2 class="luxury__title title luxury__title--mobile">Luxury Packages</h2>
+                <a class="luxury__button" href="#">view all</a>
+              </div>
+
+              <div class="swiperLuxury">
+                <!-- <div class="swiperLuxury-button-prev"></div> -->
+                <div class="swiper-wrapper swiperLuxury__wrapper">
+                  <div class="luxury__item luxury__item--best swiper-slide swiperLuxury__slide">
+                    <a class="luxury__card" href="#">
+                      <article class="luxury__article">
+                        <h3 class="luxury__article-title">Best Winter Destinations</h3>
+                        <div class="luxury__article-info">
+                          <span class="luxury__article-number">34</span>
+                          <span class="luxury__article-text">places</span>
+                          <div class="luxury__article-rhombus"></div>
+                        </div>
+                      </article>
+                    </a>
+                  </div>
+
+                  <div class="luxury__item luxury__item--extraordinary swiper-slide swiperLuxury__slide">
+                    <a class="luxury__card" href="#">
+                      <article class="luxury__article">
+                        <h3 class="luxury__article-title">The world's most extraordinary places</h3>
+                        <div class="luxury__article-info">
+                          <span class="luxury__article-number">29</span>
+                          <span class="luxury__article-text">places</span>
+                          <div class="luxury__article-rhombus"></div>
+                        </div>
+                      </article>
+                    </a>
+                  </div>
+
+                  <div class="luxury__item luxury__item--new swiper-slide swiperLuxury__slide">
+                    <a class="luxury__card" href="#">
+                      <article class="luxury__article">
+                        <h3 class="luxury__article-title">New destinations for 2022</h3>
+                        <div class="luxury__article-info">
+                          <span class="luxury__article-number">47</span>
+                          <span class="luxury__article-text">places</span>
+                          <div class="luxury__article-rhombus"></div>
+                        </div>
+                      </article>
+                    </a>
+                  </div>
+
+                  <div class="luxury__item luxury__item--health swiper-slide swiperLuxury__slide">
+                    <a class="luxury__card" href="#">
+                      <article class="luxury__article">
+                        <h3 class="luxury__article-title">Your health is matter</h3>
+                        <div class="luxury__article-info">
+                          <span class="luxury__article-number">29</span>
+                          <span class="luxury__article-text">places</span>
+                          <div class="luxury__article-rhombus"></div>
+                        </div>
+                      </article>
+                    </a>
+                  </div>
+
+                  <div class="luxury__item luxury__item--away swiper-slide swiperLuxury__slide">
+                    <a class="luxury__card" href="#">
+                      <article class="luxury__article">
+                        <h3 class="luxury__article-title">Experiences Away From Crowd</h3>
+                        <div class="luxury__article-info">
+                          <span class="luxury__article-number">168</span>
+                          <span class="luxury__article-text">places</span>
+                          <div class="luxury__article-rhombus"></div>
+                        </div>
+                      </article>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiperLuxury-button-next"></div>
+                <div class="swiperLuxury-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="book" id="book">
+          <div class="container">
+            <h2 class="book__title title">Book<br />With Us</h2>
+            <ul class="book__list">
+              <li class="book__list-item book__list-item--supercars">
+                <a class="book__list-item-card" href="#">
+                  <div class="book__list-item-inner">
+                    <h4 class="book__list-item-title">Supercars</h4>
+                  </div>
+                </a>
+              </li>
+              <li class="book__list-item book__list-item--hotels">
+                <a class="book__list-item-card" href="#">
+                  <div class="book__list-item-inner">
+                    <h4 class="book__list-item-title">Hotels</h4>
+                  </div>
+                </a>
+              </li>
+              <li class="book__list-item book__list-item--villas">
+                <a class="book__list-item-card" href="#">
+                  <div class="book__list-item-inner">
+                    <h4 class="book__list-item-title">Villas</h4>
+                  </div>
+                </a>
+              </li>
+              <li class="book__list-item book__list-item--yachts">
+                <a class="book__list-item-card" href="#">
+                  <div class="book__list-item-inner">
+                    <h4 class="book__list-item-title">Yachts</h4>
+                  </div>
+                </a>
+              </li>
+              <li class="book__list-item book__list-item--helicopter">
+                <a class="book__list-item-card" href="#">
+                  <div class="book__list-item-inner">
+                    <h4 class="book__list-item-title">Private helicopter</h4>
+                  </div>
+                </a>
+              </li>
+              <li class="book__list-item book__list-item--jet">
+                <a class="book__list-item-card" href="#">
+                  <div class="book__list-item-inner">
+                    <h4 class="book__list-item-title">Private jet</h4>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="why animated" id="why">
+          <div class="container">
+            <div class="why__inner">
+              <div class="why__top">
+                <h2 class="why__title title">Why Lux Trips</h2>
+                <p class="why__text">
+                  As Travel Designer, we know the ins and outs of travel from who to work with, where to go,
+                  when to book, and which restaurant provides the most authentic cuisine.
+                </p>
+              </div>
+              <img
+                class="why__decor-img why__decor-img--big-left"
+                src="./images/dist/decor-img-big-left.png"
+                alt="vibe"
+              />
+              <img
+                class="why__decor-img why__decor-img--min"
+                src="./images/dist/decor-img-min.png"
+                alt="vibe"
+              />
+              <img
+                class="why__decor-img why__decor-img--big-right"
+                src="./images/dist/decor-img-big-right.png"
+                alt="vibe"
+              />
+              <div class="why__middle">
+                <p class="why__advantage">Exclusive knowledge to provide the best of the best to clients</p>
+                <p class="why__text">
+                  Our area of expertise ranges from luxury resorts and villas/chalets holiday bookings,
+                  private yacht and jet charters, to exclusive tours and personalized journey planning.
+                </p>
+              </div>
+              <div class="why__bottom">
+                <img class="why__img" src="./images/dist/bottom-img.png" alt="vibe" />
+                <div class="why__info">
+                  <p class="why__advantage">
+                    We craft and plan unique itineraries tailored to customers’ interests and with strong
+                    attention to detail.
+                  </p>
+                  <button class="why__btn" type="button">help me plan a trip</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="customise animated">
+          <div class="container">
+            <h2 class="customise__title title">Customise your trip with us</h2>
+            <ol class="customise__list">
+              <li class="customise__list-item">
+                <span class="customise__list-item-number">1</span>
+                <div class="customise__list-item-info">
+                  <h4 class="customise__list-item-title">Describe your dream trip</h4>
+                  <p class="customise__list-item-text">
+                    Let us know what your perfect vacation is. Destinations, preferences, and personal
+                    interests.
+                  </p>
+                </div>
+              </li>
+              <li class="customise__list-item">
+                <span class="customise__list-item-number">2</span>
+                <div class="customise__list-item-info">
+                  <h4 class="customise__list-item-title">Get matched</h4>
+                  <p class="customise__list-item-text">
+                    Our team will create perfect travel itinerary for you, based on your personalized needs
+                    and wishes.
+                  </p>
+                </div>
+              </li>
+              <li class="customise__list-item">
+                <span class="customise__list-item-number">3</span>
+                <div class="customise__list-item-info">
+                  <h4 class="customise__list-item-title">Book your vacation</h4>
+                  <p class="customise__list-item-text">
+                    Confirm your trip only when you are completely satisfied with the proposed travel plan.
+                  </p>
+                </div>
+              </li>
+            </ol>
+            <button class="customise__btn" type="button">Start a trip request</button>
+            <p class="customise__bottom-text">It’s Free! - no credit card required</p>
+            <section class="subscribe">
+              <div class="container">
+                <h2 class="subscribe__title title">Get weekly inspiration and expert advice</h2>
+                <p class="subscribe__text">Sign up for our Weekly Newsletter</p>
+                <form class="subscribe__form">
+                  <label class="subscribe__form-label visually-hidden" for="email">Email address</label>
+                  <input
+                    class="subscribe__form-input"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email address"
+                    required
+                  />
+                  <button class="subscribe__form-btn" type="submit">Subscribe</button>
+                </form>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="review" id="review">
+          <div class="container">
+            <h2 class="review__title title">Customers reviews</h2>
+            <div class="swiper">
+              <ul class="review__items swiper-wrapper">
+                <li class="review__item swiper-slide">
+                  <img class="review__item-avatar" src="./images/dist/avatar1.png" alt="avatar" />
+                  <p class="review__item-message">
+                    “Well organized trip, All arranged well by Arooz. Special thanks to Aijaz Bhai for the
+                    service and support given to us, all explained well and take us to all places as per our
+                    wish. It was a wonderful experience .... Thank you team”
+                  </p>
+                  <p class="review__item-name">Eduard Hand</p>
+                  <p class="review__item-city">Müller-Egerer</p>
+                </li>
+                <li class="review__item swiper-slide">
+                  <img class="review__item-avatar" src="./images/dist/avatar2.png" alt="avatar" />
+                  <p class="review__item-message">
+                    “We want to visit Manali from long time. Abhishek from ideal tour give us the best quote
+                    for Manali tour. He was very supportive and approachable at any time. He made our trip
+                    hassle-free. Thanks for your great help Abhishek...Ideal Tour..!!!”
+                  </p>
+                  <p class="review__item-name">Marie Kähler</p>
+                  <p class="review__item-city">Lekkerland</p>
+                </li>
+                <li class="review__item swiper-slide">
+                  <img class="review__item-avatar" src="./images/dist/avatar1.png" alt="avatar" />
+                  <p class="review__item-message">
+                    “Well organized trip, All arranged well by Arooz. Special thanks to Aijaz Bhai for the
+                    service and support given to us, all explained well and take us to all places as per our
+                    wish. It was a wonderful experience .... Thank you team”
+                  </p>
+                  <p class="review__item-name">Eduard Hand</p>
+                  <p class="review__item-city">Müller-Egerer</p>
+                </li>
+                <li class="review__item swiper-slide">
+                  <img class="review__item-avatar" src="./images/dist/avatar2.png" alt="avatar" />
+                  <p class="review__item-message">
+                    “We want to visit Manali from long time. Abhishek from ideal tour give us the best quote
+                    for Manali tour. He was very supportive and approachable at any time. He made our trip
+                    hassle-free. Thanks for your great help Abhishek...Ideal Tour..!!!”
+                  </p>
+                  <p class="review__item-name">Marie Kähler</p>
+                  <p class="review__item-city">Lekkerland</p>
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <section class="contact" id="contact">
+              <div class="container">
+                <form class="contact__form">
+                  <h2 class="contact__form-title title">Contact</h2>
+                  <label class="contact__form-label visually-hidden" for="name">Name</label>
+                  <input class="contact__form-input" type="text" name="name" id="name" placeholder="Name" required/>
+                  <label class="contact__form-label visually-hidden" for="phone">Phone</label>
+                  <input class="contact__form-input" type="tel" name="phone" id="phone" placeholder="Phone" required/>
+                  <button class="contact__form-btn" type="submit">Call me back</button>
+                </form>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__logo-div">
+              <a class="footer__logo" href="index.html">
+                <picture>
+                  <source srcset="./images/dist/footer-logo.avif" type="image/avif" />
+                  <source srcset="./images/dist/footer-logo.webp" type="image/webp" />
+                  <img class="footer__logo-img" src="./images/dist/footer-logo.png" alt="luxtrips logo" />
+                </picture>
+              </a>
+            </div>
+            <div class="footer__inner">
+              <nav class="footer__menu">
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-item-link" href="#luxury">Luxury packages</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-item-link" href="#book">Book with us</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="footer__menu-button-div">
+                <button class="footer__menu-btn" type="button">Call Me Back</button>
+              </div>
+              <nav class="footer__menu">
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-item-link" href="#why">Why Lux Trips</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a class="footer__menu-item-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__info">
+              <p class="footer__info-copyrigth">© 2021 All Rights Reserved | Luxtrips</p>
+              <p class="footer__info-policy">Company Site | Privacy Policy</p>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/mixitup/dist/mixitup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
