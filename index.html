@@ -49,8 +49,8 @@
                 <a class="header__menu-item-link" href="#review">Reviews</a>
               </li>
             </ul>
-            <div class="header__menu-button-div">
-              <button class="header__menu-btn" type="button">Call Me Back</button>
+            <div class="header__menu-link-div">
+              <a class="header__menu-link" href="#contact">Call Me Back</a>
             </div>
             <button class="header__burger-btn" type="button">
               <img
@@ -61,8 +61,8 @@
             </button>
           </nav>
 
-          <div class="rightside-menu rightside-menu--close">
-            <!-- <a class="rightside-menu__logo" href="index.html">
+          <div class="mobile-menu mobile-menu--close">
+            <!-- <a class="mobile-menu__logo" href="index.html">
               <picture>
                 <source srcset="./images/dist/logo-rightside-menu.avif" type="image/avif" />
                 <source srcset="./images/dist/logo-rightside-menu.webp" type="image/webp" />
@@ -74,23 +74,23 @@
               </picture>
             </a> -->
 
-            <nav class="rightside-menu__menu">
-              <ul class="rightside-menu__list">
-                <li class="rightside-menu__item"><a class="rightside-menu__item-link" href="#">HOME</a></li>
-                <li class="rightside-menu__item">
-                  <a class="rightside-menu__item-link" href="#luxury">LUXURY PACKAGES</a>
+            <nav class="mobile-menu__menu">
+              <ul class="mobile-menu__list">
+                <li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#">HOME</a></li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__item-link" href="#luxury">LUXURY PACKAGES</a>
                 </li>
-                <li class="rightside-menu__item">
-                  <a class="rightside-menu__item-link" href="#book">BOOK WITH US</a>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__item-link" href="#book">BOOK WITH US</a>
                 </li>
-                <li class="rightside-menu__item">
-                  <a class="rightside-menu__item-link" href="#why">WHY LUX TRIPS</a>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__item-link" href="#why">WHY LUX TRIPS</a>
                 </li>
-                <li class="rightside-menu__item">
-                  <a class="rightside-menu__item-link" href="#contact">CONTACT</a>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__item-link" href="#contact">CONTACT</a>
                 </li>
-                <li class="rightside-menu__item">
-                  <a class="rightside-menu__item-link" href="#review">REVIEWS</a>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__item-link" href="#review">REVIEWS</a>
                 </li>
               </ul>
             </nav>
@@ -161,7 +161,7 @@
                 </div>
                 <div class="top-section__form-item">
                   <label class="top-section__form-label top-section__form-label--when" for="when">When</label>
-                  <input class="top-section__form-input" type="date" name="when" id="when" />
+                  <input class="top-section__form-input" type="date" name="when" id="when" min="YYYY-MM-DD" />
                 </div>
                 <div class="top-section__form-item">
                   <label class="top-section__form-label top-section__form-label--travellers" for="travellers"
@@ -1037,11 +1037,12 @@
             <div class="luxury__inner">
               <div class="luxury__item">
                 <h2 class="luxury__title title">Luxury Packages</h2>
-                <a class="luxury__button" href="#">view all</a>
+                <!-- <a class="luxury__button" href="#">view all</a> -->
               </div>
 
               <div class="luxury__item luxury__item--best">
-                <a class="luxury__card" href="#">
+                <a class="luxury__card" href="#" onclick="return false;">
+                  <!-- пока нет страницы на которую доллжна вести ссылка использую onclick="return false;"  -->
                   <article class="luxury__article">
                     <h3 class="luxury__article-title">Best Winter Destinations</h3>
                     <div class="luxury__article-info">
@@ -1054,7 +1055,7 @@
               </div>
 
               <div class="luxury__item luxury__item--extraordinary">
-                <a class="luxury__card" href="#">
+                <a class="luxury__card" href="#" onclick="return false;">
                   <article class="luxury__article">
                     <h3 class="luxury__article-title">The world's most extraordinary places</h3>
                     <div class="luxury__article-info">
@@ -1067,7 +1068,7 @@
               </div>
 
               <div class="luxury__item luxury__item--new">
-                <a class="luxury__card" href="#">
+                <a class="luxury__card" href="#" onclick="return false;">
                   <article class="luxury__article">
                     <h3 class="luxury__article-title">New destinations for 2022</h3>
                     <div class="luxury__article-info">
@@ -1080,7 +1081,7 @@
               </div>
 
               <div class="luxury__item luxury__item--health">
-                <a class="luxury__card" href="#">
+                <a class="luxury__card" href="#" onclick="return false;">
                   <article class="luxury__article">
                     <h3 class="luxury__article-title">Your health is matter</h3>
                     <div class="luxury__article-info">
@@ -1093,7 +1094,7 @@
               </div>
 
               <div class="luxury__item luxury__item--away">
-                <a class="luxury__card" href="#">
+                <a class="luxury__card" href="#" onclick="return false;">
                   <article class="luxury__article">
                     <h3 class="luxury__article-title">Experiences Away From Crowd</h3>
                     <div class="luxury__article-info">
@@ -1109,14 +1110,14 @@
             <div class="luxury__inner--mobile">
               <div class="luxury__top--mobile">
                 <h2 class="luxury__title title luxury__title--mobile">Luxury Packages</h2>
-                <a class="luxury__button" href="#">view all</a>
+                <!-- <a class="luxury__button" href="#">view all</a> -->
               </div>
 
               <div class="swiperLuxury">
                 <!-- <div class="swiperLuxury-button-prev"></div> -->
                 <div class="swiper-wrapper swiperLuxury__wrapper">
                   <div class="luxury__item luxury__item--best swiper-slide swiperLuxury__slide">
-                    <a class="luxury__card" href="#">
+                    <a class="luxury__card" href="#" onclick="return false;">
                       <article class="luxury__article">
                         <h3 class="luxury__article-title">Best Winter Destinations</h3>
                         <div class="luxury__article-info">
@@ -1129,7 +1130,7 @@
                   </div>
 
                   <div class="luxury__item luxury__item--extraordinary swiper-slide swiperLuxury__slide">
-                    <a class="luxury__card" href="#">
+                    <a class="luxury__card" href="#" onclick="return false;">
                       <article class="luxury__article">
                         <h3 class="luxury__article-title">The world's most extraordinary places</h3>
                         <div class="luxury__article-info">
@@ -1142,7 +1143,7 @@
                   </div>
 
                   <div class="luxury__item luxury__item--new swiper-slide swiperLuxury__slide">
-                    <a class="luxury__card" href="#">
+                    <a class="luxury__card" href="#" onclick="return false;">
                       <article class="luxury__article">
                         <h3 class="luxury__article-title">New destinations for 2022</h3>
                         <div class="luxury__article-info">
@@ -1155,7 +1156,7 @@
                   </div>
 
                   <div class="luxury__item luxury__item--health swiper-slide swiperLuxury__slide">
-                    <a class="luxury__card" href="#">
+                    <a class="luxury__card" href="#" onclick="return false;">
                       <article class="luxury__article">
                         <h3 class="luxury__article-title">Your health is matter</h3>
                         <div class="luxury__article-info">
@@ -1168,7 +1169,7 @@
                   </div>
 
                   <div class="luxury__item luxury__item--away swiper-slide swiperLuxury__slide">
-                    <a class="luxury__card" href="#">
+                    <a class="luxury__card" href="#" onclick="return false;">
                       <article class="luxury__article">
                         <h3 class="luxury__article-title">Experiences Away From Crowd</h3>
                         <div class="luxury__article-info">
@@ -1192,46 +1193,34 @@
             <h2 class="book__title title">Book<br />With Us</h2>
             <ul class="book__list">
               <li class="book__list-item book__list-item--supercars">
-                <a class="book__list-item-card" href="#">
-                  <div class="book__list-item-inner">
-                    <h4 class="book__list-item-title">Supercars</h4>
-                  </div>
-                </a>
+                <div class="book__list-item-inner">
+                  <h4 class="book__list-item-title">Supercars</h4>
+                </div>
               </li>
               <li class="book__list-item book__list-item--hotels">
-                <a class="book__list-item-card" href="#">
-                  <div class="book__list-item-inner">
-                    <h4 class="book__list-item-title">Hotels</h4>
-                  </div>
-                </a>
+                <div class="book__list-item-inner">
+                  <h4 class="book__list-item-title">Hotels</h4>
+                </div>
               </li>
               <li class="book__list-item book__list-item--villas">
-                <a class="book__list-item-card" href="#">
-                  <div class="book__list-item-inner">
-                    <h4 class="book__list-item-title">Villas</h4>
-                  </div>
-                </a>
+                <div class="book__list-item-inner">
+                  <h4 class="book__list-item-title">Villas</h4>
+                </div>
               </li>
               <li class="book__list-item book__list-item--yachts">
-                <a class="book__list-item-card" href="#">
-                  <div class="book__list-item-inner">
-                    <h4 class="book__list-item-title">Yachts</h4>
-                  </div>
-                </a>
+                <div class="book__list-item-inner">
+                  <h4 class="book__list-item-title">Yachts</h4>
+                </div>
               </li>
               <li class="book__list-item book__list-item--helicopter">
-                <a class="book__list-item-card" href="#">
-                  <div class="book__list-item-inner">
-                    <h4 class="book__list-item-title">Private helicopter</h4>
-                  </div>
-                </a>
+                <div class="book__list-item-inner">
+                  <h4 class="book__list-item-title">Private helicopter</h4>
+                </div>
               </li>
               <li class="book__list-item book__list-item--jet">
-                <a class="book__list-item-card" href="#">
-                  <div class="book__list-item-inner">
-                    <h4 class="book__list-item-title">Private jet</h4>
-                  </div>
-                </a>
+                <div class="book__list-item-inner">
+                  <h4 class="book__list-item-title">Private jet</h4>
+                </div>
               </li>
             </ul>
           </div>
@@ -1276,7 +1265,7 @@
                     We craft and plan unique itineraries tailored to customers’ interests and with strong
                     attention to detail.
                   </p>
-                  <button class="why__btn" type="button">help me plan a trip</button>
+                  <a class="why__link" href="#contact">help me plan a trip</a>
                 </div>
               </div>
             </div>
@@ -1317,13 +1306,13 @@
                 </div>
               </li>
             </ol>
-            <button class="customise__btn" type="button">Start a trip request</button>
+            <a class="customise__link" href="#contact">Start a trip request</a>
             <p class="customise__bottom-text">It’s Free! - no credit card required</p>
             <section class="subscribe">
               <div class="container">
                 <h2 class="subscribe__title title">Get weekly inspiration and expert advice</h2>
                 <p class="subscribe__text">Sign up for our Weekly Newsletter</p>
-                <form class="subscribe__form">
+                <form class="subscribe__form" id="subscribeForm">
                   <label class="subscribe__form-label visually-hidden" for="email">Email address</label>
                   <input
                     class="subscribe__form-input"
@@ -1334,7 +1323,10 @@
                     required
                   />
                   <button class="subscribe__form-btn" type="submit">Subscribe</button>
-                </form>
+                  </form>
+                    <p id="successSubsMessage" class="subscribe__form-success" style="display: none;" >
+                      Thank you for subscribing!
+                    </p>
               </div>
             </section>
           </div>
@@ -1391,7 +1383,7 @@
 
             <section class="contact" id="contact">
               <div class="container">
-                <form class="contact__form">
+                <form class="contact__form" id="contactForm">
                   <h2 class="contact__form-title title">Contact</h2>
                   <label class="contact__form-label visually-hidden" for="name">Name</label>
                   <input
@@ -1399,7 +1391,7 @@
                     type="text"
                     name="name"
                     id="name"
-                    placeholder="Name"
+                    placeholder="Name*"
                     required
                   />
                   <label class="contact__form-label visually-hidden" for="phone">Phone</label>
@@ -1408,10 +1400,14 @@
                     type="tel"
                     name="phone"
                     id="phone"
-                    placeholder="Phone"
+                    placeholder="Phone*"
                     required
                   />
                   <button class="contact__form-btn" type="submit">Call me back</button>
+                  <p id="successMessage" class="contact__form-success" style="display: none">
+                    Your request has been received. We will call you back ASAP to choose the best tour for
+                    you.
+                  </p>
                 </form>
               </div>
             </section>
@@ -1429,31 +1425,24 @@
                 </picture>
               </a>
             </div>
-            <div class="footer__inner">
-              <nav class="footer__menu">
-                <ul class="footer__menu-list">
-                  <li class="footer__menu-item">
-                    <a class="footer__menu-item-link" href="#luxury">Luxury packages</a>
-                  </li>
-                  <li class="footer__menu-item">
-                    <a class="footer__menu-item-link" href="#book">Book with us</a>
-                  </li>
-                </ul>
-              </nav>
-              <div class="footer__menu-button-div">
-                <button class="footer__menu-btn" type="button">Call Me Back</button>
-              </div>
-              <nav class="footer__menu">
-                <ul class="footer__menu-list">
-                  <li class="footer__menu-item">
-                    <a class="footer__menu-item-link" href="#why">Why Lux Trips</a>
-                  </li>
-                  <li class="footer__menu-item">
-                    <a class="footer__menu-item-link" href="#contact">Contact</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+
+            <nav class="footer__menu">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a class="footer__menu-item-link" href="#luxury">Luxury packages</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-item-link" href="#book">Book with us</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-item-link" href="#why">Why Lux Trips</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-item-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </nav>
+
             <div class="footer__info">
               <p class="footer__info-copyrigth">© 2021 All Rights Reserved | Luxtrips</p>
               <p class="footer__info-policy">Company Site | Privacy Policy</p>
